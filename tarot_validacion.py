@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 RUTA_BBDD = "bbdd_user.csv"
-DORSO_PATH = "\\cards\\Dorso.png"
+DORSO_PATH = "cards\\Dorso.png"
 CARPETA_CARTAS = "cards"
 
 # Validar correo electrónico
