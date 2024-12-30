@@ -2,9 +2,9 @@ import os
 import pandas as pd
 import streamlit as st
 
-RUTA_BBDD = "C:\\Users\\jacar\\OneDrive\\Escritorio\\Proyectos software jacarrascod\\Proyecto tarot\\bbdd_user.csv"
-DORSO_PATH = "C:\\Users\\jacar\\OneDrive\\Escritorio\\Proyectos software jacarrascod\\Proyecto tarot\\cards\\Dorso.png"
-CARPETA_CARTAS = "C:\\Users\\jacar\\OneDrive\\Escritorio\\Proyectos software jacarrascod\\Proyecto tarot\\cards"
+RUTA_BBDD = "bbdd_user.csv"
+DORSO_PATH = "\\cards\\Dorso.png"
+CARPETA_CARTAS = "cards"
 
 # Validar correo electrónico
 def validar_email(correo):
@@ -42,7 +42,7 @@ def verificar_usuario(correo):
 
 # Cargar datos del tarot
 def cargar_tarot():
-    data_path = "C:\\Users\\jacar\\OneDrive\\Escritorio\\Proyectos software jacarrascod\\Proyecto tarot\\cartas_bdd.csv"
+    data_path = "cartas_bdd.csv"
     if os.path.exists(data_path):
         return pd.read_csv(data_path, delimiter=";")
     else:
